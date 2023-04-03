@@ -158,9 +158,10 @@ describe('Token', ()=> {
 				expect(args.to).to.equal(receiver.address)
 				expect(args.value).to.equal(amount)
 			})
+			
 		})
 
-		describe("Failure", () => {
+		describe('Failure', () => {
 			it('Rejects insufficient amounts', async () => {
 				const invalidAmount = tokens(100000000)
 				await expect(token.connect(exchange).transferFrom(deployer.address, receiver.address, invalidAmount)).to.be.reverted
