@@ -1,10 +1,10 @@
-import { useSelector, useDispatch } from 'react-redux'
-import Blockies from 'react-blockies'
+import { useSelector, useDispatch } from 'react-redux';
+import Blockies from 'react-blockies';
 
-import logo from '../assets/logo.png'
-import eth from '../assets/eth.svg'
+import logo from '../assets/logo.png';
+import eth from '../assets/eth.svg';
 
-import { loadAccount } from '../store/interactions'
+import { loadAccount } from '../store/interactions';
 
 import config from '../config.json';
 
