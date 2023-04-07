@@ -64,15 +64,16 @@ const Balance = () => {
 
   const withdrawHandler = (e, token) => {
     e.preventDefault()
+
     if (token.address === tokens[0].address) {
       transferTokens(provider, exchange, 'Withdraw', token, token1TransferAmount, dispatch)
       setToken1TransferAmount(0)
     } else {
-    transferTokens(provider, exchange, 'Withdraw', token, token2TransferAmount, dispatch)
-
+      transferTokens(provider, exchange, 'Withdraw', token, token2TransferAmount, dispatch)
       setToken2TransferAmount(0)
     }
 
+    console.log("withrawing tokens...")
   }
 
   useEffect(() => {
